@@ -1,0 +1,16 @@
+extends layout
+block header
+  h1 admin page<br><br><br>
+block content
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2 Admin Log In
+        form(method='POST' action='/login')
+          div.form-group
+            label(for='email') Admin_userName
+            input.form-control(type='text' id='aun' placeholder='username' name='userName')
+          div.form-group
+            label(for='password') Password
+            input.form-control(type='password' id='password' placeholder='password' name='password')
+          button.btn.btn-success.btn-lg(type='submit') Log in 

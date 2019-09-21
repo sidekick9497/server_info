@@ -1,0 +1,10 @@
+extends layout
+block content
+    if(data)
+        h2 these are all i found  
+        for card in data
+             a(href="/cardProperties/#{card._id}")
+                h3  Name : #{card.name}
+           
+    a(href="/") click here              
+
